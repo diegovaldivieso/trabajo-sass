@@ -1,0 +1,186 @@
+.logo {
+    margin: auto;
+    height: 250px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+div ul li a:hover {
+    background-color: #929fb3;
+}
+div ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+}
+.collapse ul li {
+    float: left;
+    margin-top: 20px;
+}
+.collapse ul {
+    list-style: none;
+    display: inline-block;
+}
+.collapse {
+    text-align: right;
+}
+div .ofrecemos {
+    display: flex;
+    justify-content: safe center;
+    animation-delay: 1s;
+}
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.redes {
+    width: 30px;
+    filter: invert(100%);
+}
+.medios {
+    display: flex;
+}
+.contacto {
+    margin: 5px;
+}
+footer {
+    background: linear-gradient(to top,#CDC8BF,#5F5D59);
+    z-index: 2;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.img-servicios {
+    height: 400px;
+    width: 500px;
+}
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 500px 500px 500px 500px;
+    grid-gap: 15px;
+    grid-template-areas: "titulo titulo"
+                         "lunch lunch"
+                         "mesa mesa"
+                         "pasos pasos"
+                         "estaca estaca";
+}
+.experiencias {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+}
+.experiencias h1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.s-lunch {
+    grid-area: lunch;
+    display: flex;
+    justify-content: space-between;
+}
+.s-mesa {
+    grid-area: mesa;
+    display: flex;
+    justify-content: space-between;
+}
+.s-pasos {
+    grid-area: pasos;
+    display: flex;
+    justify-content: space-between;
+}
+.s-estacas {
+    grid-area: estaca;
+    display: flex;
+    justify-content: space-between;
+}
+.parrafo-exp {
+    width: 400px;
+    height: 400px;
+    font-size: 25px;
+}
+.exp-ofrece {
+    animation-name: valdi;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes valdi {
+    0% {
+        color: white;
+    }
+    25% {
+        color: #ECE9E6;
+    }
+    50% {
+        color: #C5C2BF;
+    }
+    75% {
+        color: #817E7B;
+    }
+    100% {
+        color: black;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+    }
+    .presentacion {
+        grid-template-rows:50px 100px;
+        grid-template-columns: 100%;
+        grid-template-areas: "titulo"
+                             "parrafo";
+    }
+    .titulo {
+        grid-area: titulo;
+    }
+    .parrafo {
+        grid-area: parrafo;
+        flex-direction: column;
+    }
+    .titulo-secundario {
+        margin-top: 100px;
+    }
+    .mq-img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .servicios {
+        grid-template-rows: 200px 700px 700px 700px 700px;
+        grid-template-columns: 96%;
+        width: 100%;
+    }
+    .s-lunch {
+        flex-direction: column;
+    }
+    .s-mesa {
+        flex-direction: column;
+    }
+    .s-pasos {
+        flex-direction: column;
+    }
+    .s-estacas {
+        flex-direction: column;
+    }
+    .img-servicios{
+        width: 300px;
+    }
+    .img-mod .img-servicios{
+        width: 400px;
+    }
+    .foot {
+         margin-top:100px;
+    width:100%;
+    height:200px;
+    }
+
+}
